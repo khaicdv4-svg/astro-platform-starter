@@ -1,21 +1,69 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import ContextAlert from '../components/ContextAlert.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
 ---
 
-<Layout title="Welcome to Astro.">
-    <ContextAlert class="mb-8" />
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
-</Layout>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website của Thầy Võ Việt Khái</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f7fb; color: #333; }
+    header { background: linear-gradient(90deg, #4facfe, #00f2fe); color: white; padding: 20px; text-align: center; }
+    nav { background: #333; color: white; display: flex; justify-content: center; padding: 10px; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 40px; text-align: center; }
+    .card { background: white; border-radius: 12px; padding: 20px; margin: 20px auto; width: 80%; max-width: 600px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    footer { background: #222; color: white; text-align: center; padding: 15px; margin-top: 40px; }
+    .btn { background: #4facfe; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; }
+    .btn:hover { background: #00c6ff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌟 Website của Thầy Võ Việt Khái 🌟</h1>
+    <p>Học tập - Sáng tạo - Kết nối</p>
+  </header>
+
+  <nav>
+    <a href="#thongbao">Thông báo</a>
+    <a href="#thoikhoabieu">Thời khoá biểu</a>
+    <a href="#baobai">Báo bài</a>
+    <a href="#giaovien">Giáo viên</a>
+  </nav>
+
+  <section id="thongbao">
+    <div class="card">
+      <h2>📢 Thông báo</h2>
+      <p>Chào mừng phụ huynh và học sinh đến với website lớp học!</p>
+    </div>
+  </section>
+
+  <section id="thoikhoabieu">
+    <div class="card">
+      <h2>📅 Thời khoá biểu</h2>
+      <p>Lịch học chi tiết sẽ được cập nhật hàng tuần.</p>
+    </div>
+  </section>
+
+  <section id="baobai">
+    <div class="card">
+      <h2>📝 Báo bài</h2>
+      <p>Giáo viên đăng báo bài để phụ huynh và học sinh theo dõi.</p>
+    </div>
+  </section>
+
+  <section id="giaovien">
+    <div class="card">
+      <h2>🔐 Khu vực Giáo viên</h2>
+      <p>Khu vực này được bảo mật. Vui lòng đăng nhập để truy cập.</p>
+      <a href="#" class="btn">Đăng nhập</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 - Thiết kế bởi Trò ngoan cho Thầy Võ Việt Khái</p>
+  </footer>
+</body>
+</html>
